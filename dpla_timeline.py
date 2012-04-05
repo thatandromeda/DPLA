@@ -1,11 +1,11 @@
 import urllib2
 import json
 
-query = "epistemology"
+query = "penguins"
 limit = 20
 
 url = ''.join([
-        'http://api.dp.la/dev/item/?search_type=keyword&query=',
+        'http://api.dp.la/dev/item/?search_type=keyword',
         '&query=%s' % query,
         '&limit=%s' % limit,
         ])
