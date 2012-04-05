@@ -10,7 +10,7 @@ class HelloWorld(object):
         	<body>
         		<form action="getParam" method="post">
         			Query: <input type='text' name='param' /><br /><br />
-        			# of results: <input type='int' name='limit' size=2 /><br />
+        			# of results: <input type='int' name='limit' size=2 /><br /><br />
 	        		<input type='submit' value='Timeline it!' />
 	        	</form>
         	</body>

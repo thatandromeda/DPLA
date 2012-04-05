@@ -8,6 +8,7 @@ Done
 + output Timeline-formatted json (including hardcoded start date)
 + HTML page
 + allow for user input of search terms
++ allow for user input of the limit parameter
 
 Todo
 ----
@@ -15,6 +16,7 @@ Todo
 + generate a logical start date
 + figure out a way of dealing with annoying NPR embeds spawning iTunes a million times (suppress, replace with better multimedia, etc.)
 + get better embeds from biodiversity library
++ get image files, not web page, from OldSF
 + deal with NaN dates
 + redirect from user input page to timeline page; how does cherrypy find that page?
-+ allow for user input of the limit parameter
++ style search page
