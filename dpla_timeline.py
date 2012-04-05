@@ -1,10 +1,9 @@
 #!/usr/bin/python
 import urllib2
 import json
+import sys
 
-def timeline(query):
-	limit = 20
-	
+def timeline(query, limit):
 	url = ''.join([
 			'http://api.dp.la/dev/item/?search_type=keyword',
 			'&query=%s' % query,
@@ -26,6 +25,7 @@ def timeline(query):
 			startDate = item['date']
 			if '>' in startDate:
 			  startDate = "2013"
+			  
 		else:
 			startDate = ''
 		if 'title' in item:
@@ -63,4 +63,4 @@ def timeline(query):
 	f.close()
 
 if __name__=="__main__":
-	timeline()
+	timeline(sys.argv[1], sys.argv[2])

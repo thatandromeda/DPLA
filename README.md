@@ -17,3 +17,4 @@ Todo
 + get better embeds from biodiversity library
 + deal with NaN dates
 + redirect from user input page to timeline page; how does cherrypy find that page?
++ allow for user input of the limit parameter

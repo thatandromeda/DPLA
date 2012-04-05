@@ -8,9 +8,9 @@ class HelloWorld(object):
         	<head>
         	</head>
         	<body>
-        		hello world<br /><br />yup
         		<form action="getParam" method="post">
-        			<input type='text' name='param' />
+        			Query: <input type='text' name='param' /><br /><br />
+        			# of results: <input type='int' name='limit' size=2 /><br />
 	        		<input type='submit' value='Timeline it!' />
 	        	</form>
         	</body>
@@ -18,9 +18,9 @@ class HelloWorld(object):
         """    
     index.exposed = True
 
-    def getParam(self, param):
-    	timeline(param)
-    	return True
+    def getParam(self, param, limit):
+    	timeline(param, limit)
+    	return param
     
     getParam.exposed = True
     	
